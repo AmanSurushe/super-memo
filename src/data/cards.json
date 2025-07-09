@@ -1,0 +1,137 @@
+[
+  {
+    "id": "4e36688e-af77-47f1-ac9b-892f2d0a8073",
+    "question": "What is a HashMap also known as?",
+    "answer": "Hash table or dictionary.",
+    "EF": 2.5,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:19:28.356Z",
+    "tags": [],
+    "performance": [
+      4
+    ],
+    "lastReview": "2025-07-09T09:19:28.356Z",
+    "notes": ""
+  },
+  {
+    "id": "eca8ab26-bcd9-4553-936d-a390675564c0",
+    "question": "What is the average time complexity for lookup, insertion, and deletion operations in a HashMap?",
+    "answer": "O(1) on average.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:20:01.059Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastReview": "2025-07-09T09:20:01.059Z"
+  },
+  {
+    "id": "c4ce7ddc-9a14-4a78-847c-037cd6a2b26f",
+    "question": "What JavaScript object functions as a built-in HashMap?",
+    "answer": "Map.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:20:21.029Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastReview": "2025-07-09T09:20:21.029Z",
+    "notes": ""
+  },
+  {
+    "id": "e6ca4ffe-4379-462d-9d93-3237d108e045",
+    "question": "What are the core operations for a custom HashMap implementation?",
+    "answer": "Insert, Retrieve, Delete, Display Internal Structure.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:20:50.543Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastReview": "2025-07-09T09:20:50.543Z",
+    "notes": ""
+  },
+  {
+    "id": "c66ee072-95f0-40da-aaa9-dc47b69d3821",
+    "question": "What is a collision in the context of HashMaps?",
+    "answer": "When two different keys are hashed to the same index.",
+    "EF": 1.3,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:21:44.525Z",
+    "tags": [],
+    "performance": [
+      2,
+      2,
+      0,
+      4
+    ],
+    "lastReview": "2025-07-09T09:21:44.525Z"
+  },
+  {
+    "id": "39a1f2ec-f095-4ee6-aff2-6fa7fbc3335d",
+    "question": "Name two collision resolution strategies.",
+    "answer": "Separate Chaining and Open Addressing (Probing).",
+    "EF": 1.3,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:22:21.471Z",
+    "tags": [],
+    "performance": [
+      0,
+      1,
+      4
+    ],
+    "lastReview": "2025-07-09T09:22:21.471Z"
+  },
+  {
+    "id": "165c3159-ec89-45f4-af59-f07a10bbda37",
+    "question": "Explain Separate Chaining.",
+    "answer": "Each bucket holds a list of key-value pairs, allowing multiple values to coexist in the same bucket.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:22:28.230Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastReview": "2025-07-09T09:22:28.230Z"
+  },
+  {
+    "id": "7d83b9a3-e5f6-4b2b-869e-6261905c793f",
+    "question": "Explain Linear Probing.",
+    "answer": "If a collision occurs at index i, check i+1, i+2, i+3, etc., until an empty slot is found.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:22:35.808Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastReview": "2025-07-09T09:22:35.808Z"
+  },
+  {
+    "id": "9251834e-1286-43a8-bb97-c512acf29885",
+    "question": "Explain Double Hashing.",
+    "answer": "Use a second hash function to compute the step size: index = (hash1(key) + i * hash2(key)) % size",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-10T09:22:39.990Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastReview": "2025-07-09T09:22:39.990Z",
+    "notes": ""
+  }
+]
