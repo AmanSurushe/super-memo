@@ -1,137 +1,268 @@
 [
   {
-    "id": "4e36688e-af77-47f1-ac9b-892f2d0a8073",
+    "id": "d2df798a-d866-47b9-8b81-527388bf37e8",
     "question": "What is a HashMap also known as?",
     "answer": "Hash table or dictionary.",
-    "EF": 2.5,
-    "interval": 1,
-    "repetition": 1,
-    "dueDate": "2025-07-10T09:19:28.356Z",
+    "EF": 1.3,
+    "interval": 6,
+    "repetition": 2,
+    "dueDate": "2025-07-15T12:22:40.563Z",
     "tags": [],
     "performance": [
+      0,
+      0,
+      3,
       4
     ],
-    "lastReview": "2025-07-09T09:19:28.356Z",
-    "notes": ""
+    "lastReview": "2025-07-09T12:22:40.563Z"
   },
   {
-    "id": "eca8ab26-bcd9-4553-936d-a390675564c0",
-    "question": "What is the average time complexity for lookup, insertion, and deletion operations in a HashMap?",
-    "answer": "O(1) on average.",
+    "id": "9a588466-40f1-4099-b419-faee1424e7d9",
+    "question": "What operations does a HashMap provide?",
+    "answer": "Efficient lookup, insertion, and deletion.",
+    "EF": 1.5600000000000003,
+    "interval": 6,
+    "repetition": 2,
+    "dueDate": "2025-07-15T13:06:34.461Z",
+    "tags": [],
+    "performance": [
+      0,
+      3,
+      4
+    ],
+    "lastRating": 4,
+    "lastReview": "2025-07-09T13:06:34.461Z"
+  },
+  {
+    "id": "44ef874f-9365-44a8-8695-b7674aa49a73",
+    "question": "What is the typical time complexity of HashMap operations on average?",
+    "answer": "O(1).",
     "EF": 2.6,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:20:01.059Z",
+    "dueDate": "2025-07-10T13:06:42.158Z",
     "tags": [],
     "performance": [
       5
     ],
-    "lastReview": "2025-07-09T09:20:01.059Z"
+    "lastRating": 5,
+    "lastReview": "2025-07-09T13:06:42.158Z"
   },
   {
-    "id": "c4ce7ddc-9a14-4a78-847c-037cd6a2b26f",
-    "question": "What JavaScript object functions as a built-in HashMap?",
+    "id": "55c92a13-bec7-4f1c-800c-391c640688b0",
+    "question": "What is the name of the built-in HashMap object in JavaScript?",
     "answer": "Map.",
     "EF": 2.6,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:20:21.029Z",
+    "dueDate": "2025-07-11T05:20:50.114Z",
     "tags": [],
     "performance": [
       5
     ],
-    "lastReview": "2025-07-09T09:20:21.029Z",
-    "notes": ""
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:20:50.114Z"
   },
   {
-    "id": "e6ca4ffe-4379-462d-9d93-3237d108e045",
+    "id": "8847214d-1bb6-478f-bf29-bfec749602dd",
     "question": "What are the core operations for a custom HashMap implementation?",
-    "answer": "Insert, Retrieve, Delete, Display Internal Structure.",
+    "answer": "Insert, Retrieve, Delete, Display internal structure.",
     "EF": 2.6,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:20:50.543Z",
+    "dueDate": "2025-07-11T05:21:11.721Z",
     "tags": [],
     "performance": [
       5
     ],
-    "lastReview": "2025-07-09T09:20:50.543Z",
-    "notes": ""
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:21:11.721Z"
   },
   {
-    "id": "c66ee072-95f0-40da-aaa9-dc47b69d3821",
+    "id": "9bda61fe-6edc-4681-9a28-ccd5d3326f15",
+    "question": "What does a hash function do?",
+    "answer": "Converts a key into a numeric index.",
+    "EF": 2.36,
+    "interval": 6,
+    "repetition": 2,
+    "dueDate": "2025-07-16T05:22:03.906Z",
+    "tags": [
+      "hashmap"
+    ],
+    "performance": [
+      3,
+      4
+    ],
+    "lastRating": 4,
+    "lastReview": "2025-07-10T05:22:03.906Z"
+  },
+  {
+    "id": "7271917d-754a-4dc9-9bc8-a51c9dcc5da6",
+    "question": "What is the array called where the key-value pair is stored in a HashMap?",
+    "answer": "Bucket array.",
+    "EF": 2.06,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-11T05:22:41.931Z",
+    "tags": [],
+    "performance": [
+      1,
+      5
+    ],
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:22:41.931Z"
+  },
+  {
+    "id": "ade46b2e-a275-4296-ab81-f3863d30f5cb",
+    "question": "What happens if you set a key with {“name”: “Aman”} and then set a property with {“mane”:”Riyan”} in the above implementation?",
+    "answer": "You will observer the loss of Data.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-11T05:24:42.141Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:24:42.141Z"
+  },
+  {
+    "id": "3b29c2b8-242d-418d-a8c9-5f96e10052fd",
     "question": "What is a collision in the context of HashMaps?",
     "answer": "When two different keys are hashed to the same index.",
-    "EF": 1.3,
+    "EF": 2.5,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:21:44.525Z",
+    "dueDate": "2025-07-11T05:24:53.725Z",
     "tags": [],
     "performance": [
-      2,
-      2,
-      0,
       4
     ],
-    "lastReview": "2025-07-09T09:21:44.525Z"
+    "lastRating": 4,
+    "lastReview": "2025-07-10T05:24:53.725Z"
   },
   {
-    "id": "39a1f2ec-f095-4ee6-aff2-6fa7fbc3335d",
+    "id": "356a9eac-701e-41c1-9290-6473ab2a8f14",
     "question": "Name two collision resolution strategies.",
     "answer": "Separate Chaining and Open Addressing (Probing).",
-    "EF": 1.3,
+    "EF": 2.06,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:22:21.471Z",
+    "dueDate": "2025-07-11T05:25:25.954Z",
+    "tags": [],
+    "performance": [
+      1,
+      5
+    ],
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:25:25.954Z"
+  },
+  {
+    "id": "82d63ac7-c115-446a-8363-41d7699d9e0d",
+    "question": "How does separate chaining resolve collisions?",
+    "answer": "Each bucket holds a list of key-value pairs.",
+    "EF": 2.06,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-11T05:25:49.592Z",
+    "tags": [],
+    "performance": [
+      1,
+      5
+    ],
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:25:49.592Z"
+  },
+  {
+    "id": "b22c58e4-5a4c-4db7-99bc-069bb125c345",
+    "question": "What are the pros and cons of separate chaining?",
+    "answer": "Simple and effective, but can increase memory usage and degrade performance with too many collisions.",
+    "EF": 1.8000000000000003,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-11T05:26:05.987Z",
     "tags": [],
     "performance": [
       0,
-      1,
-      4
+      5
     ],
-    "lastReview": "2025-07-09T09:22:21.471Z"
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:26:05.987Z"
   },
   {
-    "id": "165c3159-ec89-45f4-af59-f07a10bbda37",
-    "question": "Explain Separate Chaining.",
-    "answer": "Each bucket holds a list of key-value pairs, allowing multiple values to coexist in the same bucket.",
+    "id": "52ee2274-b239-4681-bf15-61486e2153b5",
+    "question": "Instead of using a list, what does open addressing do?",
+    "answer": "Looks for the next available slot within the array",
     "EF": 2.6,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:22:28.230Z",
+    "dueDate": "2025-07-11T05:26:25.476Z",
     "tags": [],
     "performance": [
       5
     ],
-    "lastReview": "2025-07-09T09:22:28.230Z"
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:26:25.476Z"
   },
   {
-    "id": "7d83b9a3-e5f6-4b2b-869e-6261905c793f",
-    "question": "Explain Linear Probing.",
+    "id": "17fda138-840e-4b88-8557-56272f357ce9",
+    "question": "What is linear probing?",
     "answer": "If a collision occurs at index i, check i+1, i+2, i+3, etc., until an empty slot is found.",
     "EF": 2.6,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:22:35.808Z",
+    "dueDate": "2025-07-11T05:26:32.498Z",
     "tags": [],
     "performance": [
       5
     ],
-    "lastReview": "2025-07-09T09:22:35.808Z"
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:26:32.498Z"
   },
   {
-    "id": "9251834e-1286-43a8-bb97-c512acf29885",
-    "question": "Explain Double Hashing.",
-    "answer": "Use a second hash function to compute the step size: index = (hash1(key) + i * hash2(key)) % size",
+    "id": "4f87aef2-f279-48fb-a619-6a3cfd33289e",
+    "question": "What is quadratic probing?",
+    "answer": "The step size increases quadratically: Check i + 1², i + 2², i + 3², and so on.",
     "EF": 2.6,
     "interval": 1,
     "repetition": 1,
-    "dueDate": "2025-07-10T09:22:39.990Z",
+    "dueDate": "2025-07-11T05:26:36.145Z",
     "tags": [],
     "performance": [
       5
     ],
-    "lastReview": "2025-07-09T09:22:39.990Z",
-    "notes": ""
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:26:36.145Z"
+  },
+  {
+    "id": "15a63e9b-4e4c-4846-9a9f-0f87e699881b",
+    "question": "How does double hashing work?",
+    "answer": "Use a second hash function to compute the step size: index = (hash1(key) + i * hash2(key)) % size.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-11T05:26:40.375Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:26:40.374Z"
+  },
+  {
+    "id": "1e83ee9a-e6cb-452a-b22d-2c13e9a3a3ad",
+    "question": "What are the pros and cons of double hashing?",
+    "answer": "Reduces clustering compared to linear probing, but is more complex to implement and requires careful selection of hash functions.",
+    "EF": 2.6,
+    "interval": 1,
+    "repetition": 1,
+    "dueDate": "2025-07-11T05:26:43.890Z",
+    "tags": [],
+    "performance": [
+      5
+    ],
+    "lastRating": 5,
+    "lastReview": "2025-07-10T05:26:43.890Z"
   }
 ]

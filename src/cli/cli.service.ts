@@ -176,9 +176,9 @@ export class CliService {
     }
   }
 
-  private async reviewCards(): Promise<void> {
-    // Get due cards
-    const dueCards = await this.cardsService.getDueCards();
+ private async reviewCards(): Promise<void> {
+    // Get due cards with failed/difficult ones prioritized
+    const dueCards = await this.cardsService.getDueCards(true);
 
     if (dueCards.length === 0) {
       console.log('✅ No cards due for review. Great job!');

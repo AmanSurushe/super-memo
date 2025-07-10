@@ -14,6 +14,7 @@ export interface Card {
   notes?: string; // Optional additional notes
   lastReview?: string; // ISO string date of last review
   performance?: number[]; // Array of past performance ratings
+  lastRating?: number; // Add this field to track most recent rating
 }
 
 @Injectable()
@@ -62,10 +63,35 @@ export class CardsService {
   /**
    * Get all cards due for review
    */
-  async getDueCards() {
+  async getDueCards(includeFailed: boolean = true) {
     const cards = await this.load();
     const now = new Date();
-    return cards.filter(card => new Date(card.dueDate) <= now);
+    
+    // Get all due cards
+    const dueCards = cards.filter(card => new Date(card.dueDate) <= now);
+    
+    if (includeFailed) {
+      // Prioritize failed cards from current session
+      const failedCards = dueCards.filter(card => 
+        card.lastRating !== undefined && card.lastRating <= 2
+      );
+      
+      // Then difficult cards from current session
+      const difficultCards = dueCards.filter(card =>
+        card.lastRating === 3
+      );
+      
+      // Combine with remaining due cards
+      return [
+        ...failedCards,
+        ...difficultCards,
+        ...dueCards.filter(card => 
+          card.lastRating === undefined || card.lastRating > 3
+        )
+      ];
+    }
+    
+    return dueCards;
   }
 
   /**
@@ -97,13 +123,14 @@ export class CardsService {
   async reviewCard(cardId: string, rating: number) {
     const cards = await this.load();
     const cardIndex = cards.findIndex(c => c.id === cardId);
-
-    if (cardIndex === -1) {
-      throw new Error(`Card with ID ${cardId} not found`);
-    }
-
+  
+    if (cardIndex === -1) throw new Error('Card not found');
+  
     const card = cards[cardIndex];
-
+  
+    // Store the rating before updating other fields
+    card.lastRating = rating;
+  
     // Store performance history
     if (!card.performance) card.performance = [];
     card.performance.push(rating);
