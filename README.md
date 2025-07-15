@@ -24,12 +24,26 @@ SuperMemo is a terminal-based flashcard application that uses the SuperMemo 2 (S
 
 ### Planned Features (Next Cycle)
 
-- **Grouping while creating cards**: review card, user either can select which group card to review or random
-- **Web Interface**: A browser-based UI alternative to the terminal interface
-- **Advanced Analytics**: More detailed insights into your learning patterns
-- **Mobile App**: Learn on the go with a dedicated mobile application
-- **Offline Mode**: Full functionality without internet connection
-- **Import/Export**: Support for importing/exporting cards from/to other flashcard systems
+1. **UI Development**
+   - Add Next.js frontend for web interface
+   - Maintain feature parity between CLI and UI
+   - Responsive design for all devices
+
+2. **User Management**
+   - Keycloak authentication integration
+   - Support for Google/Github auth (pinnacle.in emails only)
+   - Role-based access control
+
+3. **Database Migration**
+   - Transition from file-based storage to PostgreSQL
+   - Schema design for optimized spaced repetition
+   - Data migration scripts
+
+4. **AI Note Processing**
+   - Notes-to-cards conversion via AI
+   - Sentiment analysis on feedback
+   - Version history for AI-generated content
+   - Creativity level controls for AI responses
 
 ## Prerequisites
 
